@@ -19,8 +19,8 @@
 
 `ACCOUNT_ID` — ID вашего аккаунта в Cloudflare. Берём из URL, которую мы получили при создании листа.
 
-`API_KEY` — ключ API вашего аккаунта. Можно получить в профиле Cloudflare на вкладке API Tokens — Global API Key.
-
 `LIST_ID` — ID вашего листа. Берём из URL, которую мы получили при создании листа.
+
+`API_KEY` — ключ API вашего аккаунта. Можно получить в профиле Cloudflare на вкладке API Tokens — Global API Key.
 
 `EMAIL` — адрес электронной почты аккаунта Cloudflare.
