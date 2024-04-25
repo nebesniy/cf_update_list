@@ -7,9 +7,11 @@ error_reporting(E_ALL);
 // Переменные
 
 $cf_account_id = 'ACCOUNT_ID';
-$cf_api_key = 'API_KEY';
 $cf_list_id = 'LIST_ID';
+$cf_api_key = 'API_KEY';
 $cf_email = 'EMAIL';
+
+$cf_api_url = 'https://api.cloudflare.com/client/v4/accounts/'.$cf_account_id.'/rules/lists/'.$cf_list_id.'/items';
 $github_blacklist_url = 'https://raw.githubusercontent.com/C24Be/AS_Network_List/main/blacklists/blacklist.txt';
 
 // Работаем с массивом диапазонов IP
@@ -27,11 +29,9 @@ $blacklist_cf_prepared = array_map(function ($value) {
 
 $blacklist_cf_prepared = json_encode($blacklist_cf_prepared);
 
-// Работаем с CloudFlare API
+// Работаем с Cloudflare API
 
 $ch = curl_init();
-
-$cf_api_url = 'https://api.cloudflare.com/client/v4/accounts/'.$cf_account_id.'/rules/lists/'.$cf_list_id.'/items';
 
 curl_setopt($ch, CURLOPT_URL, $cf_api_url);
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'PUT');
