@@ -18,7 +18,7 @@ $github_blacklist_url = 'https://raw.githubusercontent.com/C24Be/AS_Network_List
 
 $blacklist = file_get_contents($github_blacklist_url);
 if ($blacklist === false) {
-    exit("Ошибка при запросе ".$github_blacklist_url);
+    exit('Ошибка при запросе '.$github_blacklist_url);
 }
 
 $blacklist_cf_prepared = array_filter(explode(PHP_EOL, $blacklist));
