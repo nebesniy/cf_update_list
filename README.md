@@ -7,7 +7,7 @@
 
 ## Предварительные настройки
 
-Зайдите в аккаунт Cloudflare, перейдите в Manage account — Configurations. На вкладке Lists создайте новый лист (кнопка Create list): Identifier и Description — по желанию, Type — IP.
+Зайдите в аккаунт Cloudflare, перейдите в Manage account — Configurations. На вкладке Lists создайте новый лист (кнопка Create list): `Identifier` и `Description` — по желанию, `Type` — IP.
 
 Перейдите в созданный лист (Edit), скопируйте URL текущей страницы в адресной строке. Вы получите URL такого вида: `https://dash.cloudflare.com/ACCOUNT_ID/configurations/lists/LIST_ID` с вашими значениями. Они нам пригодятся для дальнейшей конфигурации.
 
